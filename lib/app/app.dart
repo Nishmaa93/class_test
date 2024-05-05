@@ -1,18 +1,14 @@
-// ignore: depend_on_referenced_packages
+import 'package:class_test/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../screen/grid_view_screen.dart';
- 
-class MyApp extends StatelessWidget {
+class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Name Buttons App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: GridViewScreen(),
+      home: SplashScreen(),
     );
   }
 }
